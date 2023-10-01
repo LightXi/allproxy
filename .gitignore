@@ -1,0 +1,9 @@
+.idea
+.vscode
+
+proxy
+proxy.exe
+
+cache/*
+!cache/.gitkeep
+
