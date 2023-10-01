@@ -28,6 +28,8 @@ func RegisterFonts(app *fiber.App) {
 
 		return End(c, data, func(data string) string {
 			return strings.Replace(data, "https://fonts.googleapis.com", "/fonts", -1)
+		}, func(data string) string {
+			return strings.Replace(data, "https://fonts.gstatic.com", "/gstatic", -1)
 		})
 	})
 
