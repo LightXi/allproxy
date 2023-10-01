@@ -17,9 +17,7 @@ func main() {
 
 	app := fiber.New()
 	app.Static("/static", "./static")
-	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendFile("./app/dist/index.html")
-	})
+	app.Static("/", "./app/dist")
 	app.Use(cors.New(cors.Config{
 		AllowOrigins: "*",
 		AllowHeaders: "*",
