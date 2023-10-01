@@ -16,6 +16,8 @@ func RegisterJsdelivr(app *fiber.App) {
 			return c.SendString(fmt.Sprintf("error during get data: %s", err.Error()))
 		}
 
+		data = strings.Replace(data, "fonts/", "/jsdelivr/fonts/", -1)
+
 		return c.SendString(data)
 	})
 }
