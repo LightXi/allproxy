@@ -26,6 +26,9 @@ func main() {
 	{
 		packages.RegisterJsdelivr(app)
 		packages.RegisterFonts(app)
+		packages.RegisterEsm(app)
+		packages.RegisterUnpkg(app)
+		packages.RegisterCustom(app)
 	}
 
 	if err := app.Listen(fmt.Sprintf(":%d", viper.GetInt("port"))); err != nil {
