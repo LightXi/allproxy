@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/spf13/viper"
 	"proxy/packages"
 )
@@ -15,8 +16,14 @@ func main() {
 	}
 
 	app := fiber.New()
+	app.Static("/static", "./static")
+	app.Use(cors.New(cors.Config{
+		AllowOrigins: "*",
+		AllowHeaders: "*",
+		AllowMethods: "*",
+	}))
+
 	{
-		app.Static("/static", "./static")
 		packages.RegisterJsdelivr(app)
 		packages.RegisterFonts(app)
 	}
