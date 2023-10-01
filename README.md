@@ -11,7 +11,7 @@ GoogleFonts, JsDelivr, ESM, Unpkg, etc. General Agency, accelerating the domesti
 ### 🚀 Usage | 用法
 
 - Google Fonts
-> Note: 请将风格符号`+`替换为`-`，例如`Roboto+Mono`替换为`Roboto-Mono`
+> Note: 请将分割符号`+`替换为`-`，例如`Roboto+Mono`替换为`Roboto-Mono`
 
 ```html
 https://open.lightxi.com/fonts/<font-family>
@@ -36,6 +36,9 @@ https://open.lightxi.com/unpkg/<path>
 ```html
 https://open.lightxi.com/cdnjs/<path>
 ```
+
+### ⚡ CDN | 加速
+Powered by [LightXi Cloud](https://lightxi.com)
 
 ### 📝 License | 许可证
 CC-0-1.0 License
