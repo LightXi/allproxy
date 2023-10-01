@@ -42,6 +42,13 @@ function App() {
               https://open.lightxi.com/unpkg/<strong className={`point`}>react@16.7.0/umd/react.production.min.js</strong>
             </div>
           </div>
+
+          <div className={`app`}>
+            <a className={`title`} href={`https://cdnjs.com`} target={`_blank`}>Cdnjs</a>
+            <div className={`code`}>
+              https://open.lightxi.com/cdnjs/<strong className={`point`}>ajax/libs/vue/3.3.4/vue.cjs.js</strong>
+            </div>
+          </div>
         </div>
         <div className={`card-footer`}>
           powered by

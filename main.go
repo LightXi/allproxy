@@ -29,6 +29,7 @@ func main() {
 		packages.RegisterFonts(app)
 		packages.RegisterEsm(app)
 		packages.RegisterUnpkg(app)
+		packages.RegisterCdnJs(app)
 		packages.RegisterCustom(app)
 	}
 
