@@ -13,11 +13,11 @@ func RegisterEsm(app *fiber.App) {
 		uri := fmt.Sprintf("https://cdn.jsdelivr.net/npm%s", source)
 		data, err := utils.Get(uri, nil)
 		if err != nil {
-			return c.SendString(fmt.Sprintf("error during get data: %s", err.Error()))
+			return Catch(c, err)
 		}
 
-		data = strings.Replace(data, "https://esm.sh", "/esm", -1)
-
-		return c.SendString(data)
+		return End(c, data, func(data string) string {
+			return strings.Replace(data, "https://cdn.jsdelivr.net/npm", "/esm", -1)
+		})
 	})
 }

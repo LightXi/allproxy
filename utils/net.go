@@ -4,7 +4,7 @@ import "github.com/valyala/fasthttp"
 
 type Headers map[string]string
 
-func Get(uri string, headers *Headers) (string, error) {
+func Get(uri string, headers *Headers) (*fasthttp.Response, error) {
 	req := fasthttp.AcquireRequest()
 	req.SetRequestURI(uri)
 	if headers != nil {
@@ -15,8 +15,8 @@ func Get(uri string, headers *Headers) (string, error) {
 
 	resp := fasthttp.AcquireResponse()
 	if err := fasthttp.Do(req, resp); err != nil {
-		return "", err
+		return nil, err
 	}
 
-	return string(resp.Body()), nil
+	return resp, nil
 }
