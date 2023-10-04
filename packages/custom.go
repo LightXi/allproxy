@@ -16,7 +16,6 @@ func RegisterCustom(app *fiber.App) {
 		app.All(fmt.Sprintf("/%s/*", k), func(c *fiber.Ctx) error {
 			source := strings.TrimPrefix(c.Path(), fmt.Sprintf("/%s", k))
 			uri := fmt.Sprintf("%s%s", v, source)
-			fmt.Println(uri)
 			resp, err := utils.Get(uri, nil)
 			if err != nil {
 				return Catch(c, err)
