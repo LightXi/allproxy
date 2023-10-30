@@ -60,15 +60,15 @@ function App() {
       </div>
       <div className={`footer`}>
         <a href="https://beian.miit.gov.cn/" target="_blank">
-          <img src="https://lightxi.com/themes/web/mfQloud/assets/images/gov.webp" alt="" />
+          <img src="/gov.webp" alt="" />
             粤ICP备2023066011号-1
         </a>
         <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44040302000432" target="_blank">
-          <img src="https://lightxi.com/themes/web/mfQloud/assets/images/gongan.webp" alt="" />
+          <img src="/gongan.webp" alt="" />
             粤公网安备 44040302000432号
         </a>
         <a href="https://dxzhgl.miit.gov.cn/dxxzsp/xkz/xkzgl/resource/qiyesearch.jsp?num=B1-20234898&amp;type=xuke" target="_blank">
-          <img src="https://lightxi.com/themes/web/mfQloud/assets/images/cert.webp" alt="" />
+          <img src="/cert.webp" alt="" />
             增值电信业务经营许可证 B1-20234898
         </a>
       </div>
