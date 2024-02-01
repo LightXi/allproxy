@@ -25,9 +25,9 @@ func main() {
 	}))
 
 	{
-		packages.RegisterJsdelivr(app)
+		//packages.RegisterJsdelivr(app)
 		packages.RegisterFonts(app)
-		packages.RegisterEsm(app)
+		//packages.RegisterEsm(app)
 		packages.RegisterUnpkg(app)
 		packages.RegisterCdnJs(app)
 		packages.RegisterCustom(app)

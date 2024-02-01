@@ -23,14 +23,14 @@ function App() {
           </div>
 
           <div className={`app`}>
-            <a className={`title`} href={`https://jsdelivr.com`} target={`_blank`}>JsDelivr</a>
+            <a className={`title`} href={`https://jsdelivr.com`} target={`_blank`}>JsDelivr (当前已关闭通道)</a>
             <div className={`code`}>
               https://open.lightxi.com/jsdelivr/<strong className={`point`}>npm/jquery@3.7.1/dist/jquery.min.js</strong>
             </div>
           </div>
 
           <div className={`app`}>
-            <a className={`title`} href={`https://esm.sh`} target={`_blank`}>ESM</a>
+            <a className={`title`} href={`https://esm.sh`} target={`_blank`}>ESM (当前已关闭通道)</a>
             <div className={`code`}>
               https://open.lightxi.com/esm/<strong className={`point`}>canvas-confetti@1.6.1</strong>
             </div>
