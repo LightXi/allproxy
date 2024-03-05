@@ -37,6 +37,17 @@ https://open.lightxi.com/unpkg/<path>
 https://open.lightxi.com/cdnjs/<path>
 ```
 
+### 🍎 Depoly | 部署
+```shell
+go build . # build backend
+
+cd app
+pnpm install
+pnpm build # build frontend
+
+# run backend (e.g. systemctl)
+```
+
 ### ⚡ CDN | 加速
 Powered by [LightXi Cloud](https://lightxi.com)
 
